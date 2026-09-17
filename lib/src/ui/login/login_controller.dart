@@ -34,7 +34,7 @@ class LoginController extends GetxController {
       } else {
         isLoading = false;
         isValid = false;
-        errorMessage = "EmailId or Password are invalid";
+        errorMessage = "Invalid email or password. Please check your credentials.";
         if (!context.mounted) return;
         ErrorHandler.showErrorSnackBar(context, errorMessage!);
       }

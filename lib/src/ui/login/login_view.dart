@@ -96,13 +96,6 @@ class _LoginViewState extends State<LoginView> {
                         },
                       ),
                       const Gap(Spacing.large),
-                      if (!controller.isValid) ...[
-                        const Text(
-                          "Email or Password are invalid...",
-                          style: TextStyle(color: Colors.red),
-                        ),
-                        const Gap(Spacing.medium),
-                      ],
                       CommonButton(
                         onTap: () {
                           if (_formKey.currentState?.validate() ?? false) {
